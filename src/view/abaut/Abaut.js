@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 import { HashLink } from "react-router-hash-link";
 const Abaut = () => {
   const id = [
@@ -20,17 +21,12 @@ const Abaut = () => {
           <div className="">
             <h2 className="text-3xl">Mundarija</h2>
             {id.map((e) => (
-              <>
-                <HashLink
-                  key={e.id}
-                  className="text-2xl text-green-600"
-                  smooth
-                  to={e.to}
-                >
+              <div key={e.id}>
+                <HashLink className="text-2xl text-green-600" smooth to={e.to}>
                   {e.text}
                 </HashLink>
                 <br />
-              </>
+              </div>
             ))}
           </div>
           <div className="w-5/6">
@@ -38,7 +34,6 @@ const Abaut = () => {
               className="mx-auto w-5/6 md:w-1/3 "
               src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png"
               alt="react"
-              srcset=""
             />
           </div>
         </div>
@@ -95,6 +90,7 @@ const Abaut = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

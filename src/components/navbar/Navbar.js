@@ -71,7 +71,7 @@ const Navbar = () => {
                       <span
                         key={elem.slug}
                         onClick={() => Navigate(elem)}
-                        className="md:float-right mt-6 align-middle text-[#333333] text-[#16px] lg:ml-14 md:ml-8 font-semibold cursor-pointer hover:text-[#00A59C]"
+                        className="md:float-right mt-10 align-middle text-[#333333] text-[#16px] lg:ml-14 md:ml-8 font-semibold cursor-pointer hover:text-[#00A59C]"
                       >
                         {elem.name}
                       </span>
