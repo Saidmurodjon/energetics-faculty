@@ -28,7 +28,7 @@ const Left = ({ item, permission, QuizFunction,check }) => {
             : null
         }`}
       >
-        {item.id} {item.question}
+        {item.question}
       </h1>
     </div>
   );

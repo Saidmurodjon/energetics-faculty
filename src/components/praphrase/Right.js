@@ -19,7 +19,9 @@ const Right = ({ item, QuizFunction, permission, check }) => {
       <h1
         onClick={() => Click()}
         className={`border-2 p-2  shadow-md  cursor-pointer md:min-h-[112px] lg:min-h-[85px] min-h-[160px] text-lg rounded-2xl m-2 lg:m-4 ${
-          right ? "bg-red-400/60" : "bg-white hover:shadow-lg hover:bg-red-500/20"
+          right
+            ? "bg-red-400/60"
+            : "bg-white hover:shadow-lg hover:bg-red-500/20"
         } ${
           check
             ? item.check === false
@@ -28,7 +30,6 @@ const Right = ({ item, QuizFunction, permission, check }) => {
             : null
         }`}
       >
-        {item.id}
         {item.key}
       </h1>
     </div>
