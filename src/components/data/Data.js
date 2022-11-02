@@ -2,7 +2,7 @@ const uz = {
   category: [
     { name: "Home", slug: "" },
     { name: "Quiz", slug: "quiz" },
-    { name: "Praphrase", slug: "paraphrase" },
+    { name: "Paraphrase", slug: "paraphrase" },
     { name: "Abaut", slug: "abaut" },
   ],
 
